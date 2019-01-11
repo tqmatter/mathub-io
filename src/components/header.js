@@ -28,7 +28,7 @@ export default () => (
                     <button color="inherit" className="underline">
                         <span
                             css={css`
-                                background-color: orange;
+                                background-color: #FFF874;
                                 padding: 2px;
                                 margin-right: 2rem;
                                 color: #3f51b5;
@@ -74,7 +74,7 @@ export default () => (
                 margin: auto;
                 text-align: center;
                 `}>
-                <h1>The Future of Materials Development<span css={css`color: orange;`}>.</span></h1>
+                <h1>The Future of Materials Development<span css={css`color: #FFF874;`}>.</span></h1>
 
                 Machine learning solutions for materials science.
             </div>
