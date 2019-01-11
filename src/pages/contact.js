@@ -6,8 +6,9 @@ const About = () => (
         <div className="contained">
             <h2>Contact</h2>
             <p>
-                You can send us an email to: omdb@diracmaterials.org
+                Please, feel free to contact us at the email below:
             </p>
+            <a href="mailto:omdb@diracmaterials.org">omdb@diracmaterials.org</a>
         </div>
     </Layout>
 )
