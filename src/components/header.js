@@ -9,7 +9,7 @@ export default () => (
                 margin: -20px -20px 0 -20px;
                 font-family: helvetica, sans-serif !important;
                 letter-spacing: 0.1em !important;
-                // why do I need this?
+                // why do I need this to make it work in chrome?
                 & button {
                     letter-spacing: 0.1em !important;
                 }
@@ -41,7 +41,11 @@ export default () => (
                         `}>
                             <Logo />
                         </span>
-                        mathub.io
+                        <span css={css`
+                            @media (max-width: 768px) {display: none;}
+                        `}>
+                            mathub.io
+                        </span>
                     </button>
                 </Link>
 
