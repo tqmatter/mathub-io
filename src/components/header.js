@@ -30,7 +30,7 @@ export default () => (
                             css={css`
                                 background-color: #FFF874;
                                 padding: 2px;
-                                margin-right: 2rem;
+                                margin-right: 1rem;
                                 color: #3f51b5;
                                 display: inline-block;
                             `}
