@@ -5,10 +5,6 @@ import { css } from "@emotion/core"
 export default () => (
     <div css={css`
                 margin: -20px -20px 0 -20px;
-                &:hover #appearing-logo {
-                    visibility: visible;
-                    opacity: 1;
-                }
             `}>
         <nav css={
             css`
@@ -40,12 +36,7 @@ export default () => (
                             `}
                         >MH</span>
                         <span id="appearing-logo"
-                            css={css`
-                                visibility: hidden;
-                                opacity: 0;
-                                transition: visibility 1s, opacity 1s;
-                                display: inline-block;
-                            `}>Mathub</span>
+                        >Mathub</span>
                     </button>
                 </Link>
 

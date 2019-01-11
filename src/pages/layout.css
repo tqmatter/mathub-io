@@ -1,9 +1,13 @@
 body {
     font-family: Colfaxx,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
     color: #333;
-    font-size: 150%;
     margin: 20px;
     overflow-x: hidden;
+}
+@media (min-width: 992px) {
+    body{
+        font-size: 150%;
+    }
 }
 
 .contained {
