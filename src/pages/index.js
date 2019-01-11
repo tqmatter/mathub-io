@@ -26,13 +26,17 @@ const IndexPage = () => (
                         <h3>Organic Materials Database</h3>
                         <div css={css`
                             display: grid;
-                            grid-template-columns: 80% 20%; 
-                            margin-left: 2rem;
+                            grid-template-columns: auto 150px; 
                         `}>
                             <p css={css`
                                 margin-bottom: 20px; @media (min-width: 992px) {min-height: 10rem};
                                 `}>The organic materials database is an <b>open access, nonprofit</b>, electronic structure database for 3-dimensional organic crystals, developed and hosted by the Nordic Institute for Theoretical Physics – Nordita. </p>
-                            <a href="https://omdb.mathub.io/" target="blank" rel="noreferrer noopener">
+                            <a href="https://omdb.mathub.io/" target="blank" rel="noreferrer noopener"
+                                css={css`
+                                margin-top: auto;
+                                margin-bottom: auto;
+                                margin-left: 1rem;
+                            `}>
                                 <Logo />
                             </a>
                         </div>
