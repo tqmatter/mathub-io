@@ -33,6 +33,7 @@ export default () => (
                                 margin-right: 1rem;
                                 color: #3f51b5;
                                 display: inline-block;
+                                font-size: 90%;
                             `}
                         >MH</span>
                         <span id="appearing-logo"
