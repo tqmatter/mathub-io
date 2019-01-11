@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { graphql, StaticQuery } from "gatsby"
 
-// import gatsbyIcon from "../assets/gatsby-icon.png"
+import favicon from "../images/favicon.png"
 
 const SiteMetadata = ({ pathname }) => {
     return <StaticQuery
@@ -23,7 +23,7 @@ const SiteMetadata = ({ pathname }) => {
         }) => (
                 <Helmet defaultTitle={title} titleTemplate={title}>
                     <html lang="en" />
-                    <link rel="canonical" href={`${siteUrl}${pathname}`} />
+                    <link rel="canonical" href={`${siteUrl}`} />
                     <meta name="docsearch:version" content="2.0" />
                     <meta
                         name="viewport"
@@ -34,6 +34,7 @@ const SiteMetadata = ({ pathname }) => {
                     <meta property="og:type" content="website" />
                     <meta property="og:locale" content="en" />
                     <meta property="og:site_name" content={title} />
+                    <link rel='icon' type='image/png' href={favicon} sizes="32x32" />
                     {/* <meta property="og:image" content={`${siteUrl}${gatsbyIcon}`} />
                     <meta property="og:image:width" content="512" />
                     <meta property="og:image:height" content="512" /> */}

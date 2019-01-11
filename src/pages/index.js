@@ -3,7 +3,8 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import { css } from "@emotion/core";
-import Logo from "../components/logo"
+import OmdbLogo from "../components/omdb-logo"
+
 
 const IndexPage = () => (
     <Layout>
@@ -35,7 +36,7 @@ const IndexPage = () => (
                                 margin-bottom: auto;
                                 margin-left: 1rem;
                             `}>
-                                <Logo />
+                                <OmdbLogo />
                             </a>
                         </div>
                         <div className="centered">

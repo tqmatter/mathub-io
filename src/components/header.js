@@ -1,6 +1,8 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import { css } from "@emotion/core"
+import Logo from "../components/logo"
+
 
 export default () => (
     <div css={css`
@@ -26,7 +28,7 @@ export default () => (
                     flex-grow: 1;
                 `}>
                     <button color="inherit" className="underline">
-                        <span
+                        {/* <span
                             css={css`
                                 background-color: #FFF874;
                                 padding: 2px;
@@ -35,7 +37,15 @@ export default () => (
                                 display: inline-block;
                                 font-size: 90%;
                             `}
-                        >MH</span>
+                        >MH</span> */}
+
+                        <span css={css`
+                            float: left;
+                            min-width: 4rem;
+                            margin-right: 1rem;
+                        `}>
+                            <Logo />
+                        </span>
                         <span id="appearing-logo"
                         >mathub.io</span>
                     </button>

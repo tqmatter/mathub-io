@@ -15,10 +15,10 @@ import { css } from '@emotion/core'
  */
 
 const OmdbLogo = () => (
-    <StaticQuery
-        query={graphql`
+  <StaticQuery
+    query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "logo.png" }) {
+        placeholderImage: file(relativePath: { eq: "logo-omdb.png" }) {
           childImageSharp {
             fluid(maxWidth: 250) {
               ...GatsbyImageSharpFluid_noBase64
@@ -27,12 +27,12 @@ const OmdbLogo = () => (
         }
       }
     `}
-        render={data => <Img css={css`
+    render={data => <Img css={css`
             & img {
                 height: unset !important;
-                max-width: 4rem;
+                min-width: 50px;
               }
         `} fluid={data.placeholderImage.childImageSharp.fluid} />}
-    />
+  />
 )
 export default OmdbLogo
