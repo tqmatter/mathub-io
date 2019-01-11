@@ -45,4 +45,14 @@ body {
     background-color: #3f51b5 !important;
     font-weight: 700 !important;
     font-size: large !important;
+    border: none;
+    padding: 1rem;
+    font-size: 150%;
+    transition: color 0.3s !important;
+}
+
+.blueButton:hover {
+    cursor: pointer;
+    /* background:  #3f51b5; */
+    color: orange !important;
 }
