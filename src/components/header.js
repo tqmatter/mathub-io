@@ -8,6 +8,11 @@ export default () => (
     <div css={css`
                 margin: -20px -20px 0 -20px;
                 font-family: helvetica, sans-serif !important;
+                letter-spacing: 0.1em !important;
+                // why do I need this?
+                & button {
+                    letter-spacing: 0.1em !important;
+                }
             `}>
         <nav css={
             css`
