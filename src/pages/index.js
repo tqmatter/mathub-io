@@ -46,7 +46,7 @@ const IndexPage = () => (
                 <div className="centered">
                     <h2 css={css`margin-bottom: 20px; color: #3f51b5;`}> Commercial Users </h2>
                     <div css={css`text-align: left;`}>
-                        <h3>Consultance service</h3>
+                        <h3>Industry Services</h3>
                         <p css={css`margin-bottom: 20px; @media (min-width: 992px) {min-height: 10rem};`}>
                             Our team of physics and machine learning experts can assist your business.
                         </p>
