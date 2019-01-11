@@ -2,48 +2,63 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import "./layout.css"
 import { css } from "@emotion/core";
-import { Grid, Button } from '@material-ui/core';
+
+import "./layout.css"
 
 const IndexPage = () => (
     <Layout>
-        <Grid container spacing={14}>
-            <Grid item xs={1}></Grid>
-            <Grid item xs={4}>
+        <div css={css`
+        @media (min-width: 992px) {
+            display: grid;
+            grid-template-columns: 5% 40% 5% 5% 40% 5%;
+        }
+        `}>
+            <div css={css`
+                grid-column-start: 2;
+                grid-column-end: 3;
+                margin-bottom: 4rem;
+            `}>
                 <div className="centered">
                     <h2 css={css`margin-bottom: 20px;  color: #3f51b5; `}>Academic Users</h2>
                     <div css={css`text-align: left;`}>
                         <h3>Organic Materials Database</h3>
-                        <p css={css`margin-bottom: 20px; min-height: 10rem;`}>The organic materials database is an open access electronic structure database for 3-dimensional organic crystals, developed and hosted at the Nordic Institute for Theoretical Physics – Nordita. </p>
-                        <div class="centered">
+                        <p css={css`
+                                margin-bottom: 20px; @media (min-width: 992px) {min-height: 10rem};
+                                `}>The organic materials database is a <b>open access, nonprofit</b>, electronic structure database for 3-dimensional organic crystals, developed and hosted by the Nordic Institute for Theoretical Physics – Nordita. </p>
+                        <div className="centered">
                             <a href="https://omdb.diracmaterials.org/" target="blank" rel="noreferrer noopener">
-                                <Button className="blueButton">Visit the OMDB</Button>
+                                <button className="blueButton">Visit the OMDB</button>
                             </a>
                         </div>
                     </div>
                 </div>
-            </Grid>
-            <Grid item xs={1} css={css`border-right: 1px solid grey;`}></Grid>
-            <Grid item xs={1}></Grid>
-            <Grid item xs={4}>
+            </div>
+            <div css={css`
+                @media (min-width: 992px) {border-right: 1px solid grey;}
+                @media (max-width: 992px) {border-bottom: 1px solid grey;}
+                flex-grow: 1;
+            `}></div>
+            <div css={css`
+                grid-column-start: 5;
+                grid-column-end: 6;
+            `}>
                 <div className="centered">
-                    <h2 css={css`margin-bottom: 20px; color: #3f51b5;`}> Comercial Users </h2>
+                    <h2 css={css`margin-bottom: 20px; color: #3f51b5;`}> Commercial Users </h2>
                     <div css={css`text-align: left;`}>
                         <h3>Consultance service</h3>
-                        <p css={css`margin-bottom: 20px; min-height: 10rem;`}>
+                        <p css={css`margin-bottom: 20px; @media (min-width: 992px) {min-height: 10rem};`}>
                             Our team of physics and machine learning experts can assist your business.
                         </p>
-                        <div class="centered">
+                        <div className="centered">
                             <Link to="contact">
-                                <Button className="blueButton">Schedule a meeting with us</Button>
+                                <button className="blueButton">Schedule a meeting with us</button>
                             </Link>
                         </div>
                     </div>
                 </div>
-            </Grid>
-            <Grid item xs={1}></Grid>
-        </Grid>
+            </div>
+        </div>
     </Layout>
 )
 

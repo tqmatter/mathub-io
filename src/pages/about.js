@@ -1,7 +1,5 @@
 import React from 'react'
-
 import Layout from '../components/layout'
-import "./layout.css"
 
 const About = () => (
     <Layout>
@@ -12,7 +10,7 @@ const About = () => (
             </p>
             <h2>What is our motivation?</h2>
             <p>
-                We want to provide solutions for academics and industries in the fields of Materials Informatics and Machine Learning.
+                We want to provide solutions for academics and industries in the fields of Materials Science and Machine Learning.
             </p>
 
         </div>
