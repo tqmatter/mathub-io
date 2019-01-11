@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import { css } from "@emotion/core";
+import Logo from "../components/logo"
 
 import "./layout.css"
 
@@ -18,16 +19,25 @@ const IndexPage = () => (
                 grid-column-start: 2;
                 grid-column-end: 3;
                 margin-bottom: 4rem;
-            `}>
+                `}>
                 <div className="centered">
                     <h2 css={css`margin-bottom: 20px;  color: #3f51b5; `}>Academic Users</h2>
                     <div css={css`text-align: left;`}>
                         <h3>Organic Materials Database</h3>
-                        <p css={css`
+                        <div css={css`
+                            display: grid;
+                            grid-template-columns: 70% 30%; 
+                            margin-left: 2rem;
+                        `}>
+                            <p css={css`
                                 margin-bottom: 20px; @media (min-width: 992px) {min-height: 10rem};
                                 `}>The organic materials database is a <b>open access, nonprofit</b>, electronic structure database for 3-dimensional organic crystals, developed and hosted by the Nordic Institute for Theoretical Physics – Nordita. </p>
+                            <a href="https://omdb.mathub.io/" target="blank" rel="noreferrer noopener">
+                                <Logo />
+                            </a>
+                        </div>
                         <div className="centered">
-                            <a href="https://omdb.diracmaterials.org/" target="blank" rel="noreferrer noopener">
+                            <a href="https://omdb.mathub.io/" target="blank" rel="noreferrer noopener">
                                 <button className="blueButton">Visit the OMDB</button>
                             </a>
                         </div>
@@ -38,7 +48,7 @@ const IndexPage = () => (
                 @media (min-width: 992px) {border-right: 1px solid grey;}
                 @media (max-width: 992px) {border-bottom: 1px solid grey;}
                 flex-grow: 1;
-            `}></div>
+                `}></div>
             <div css={css`
                 grid-column-start: 5;
                 grid-column-end: 6;
