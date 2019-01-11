@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{141:function(a,e,t){"use strict";t.r(e);var c=t(8),n=(t(0),t(146));e.default=function(){return Object(c.a)(n.a,null,Object(c.a)("div",{className:"contained"},Object(c.a)("h2",null,"Contact"),Object(c.a)("p",null,"Please, feel free to contact us at the email below:"),Object(c.a)("a",{href:"mailto:omdb@diracmaterials.org"},"omdb@diracmaterials.org")))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-98705db0df6b6625fa8a.js.map
