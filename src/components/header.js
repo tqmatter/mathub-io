@@ -36,7 +36,7 @@ export default () => (
                             `}
                         >MH</span>
                         <span id="appearing-logo"
-                        >Mathub</span>
+                        >mathub.io</span>
                     </button>
                 </Link>
 

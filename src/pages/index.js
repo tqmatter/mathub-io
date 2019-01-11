@@ -26,7 +26,7 @@ const IndexPage = () => (
                         <h3>Organic Materials Database</h3>
                         <div css={css`
                             display: grid;
-                            grid-template-columns: 70% 30%; 
+                            grid-template-columns: 80% 20%; 
                             margin-left: 2rem;
                         `}>
                             <p css={css`
