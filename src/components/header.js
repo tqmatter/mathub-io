@@ -7,6 +7,7 @@ import Logo from "../components/logo"
 export default () => (
     <div css={css`
                 margin: -20px -20px 0 -20px;
+                font-family: helvetica, sans-serif !important;
             `}>
         <nav css={
             css`
@@ -28,17 +29,6 @@ export default () => (
                     flex-grow: 1;
                 `}>
                     <button color="inherit" className="underline">
-                        {/* <span
-                            css={css`
-                                background-color: #FFF874;
-                                padding: 2px;
-                                margin-right: 1rem;
-                                color: #3f51b5;
-                                display: inline-block;
-                                font-size: 90%;
-                            `}
-                        >MH</span> */}
-
                         <span css={css`
                             float: left;
                             min-width: 4rem;
@@ -46,8 +36,7 @@ export default () => (
                         `}>
                             <Logo />
                         </span>
-                        <span id="appearing-logo"
-                        >mathub.io</span>
+                        mathub.io
                     </button>
                 </Link>
 
@@ -80,6 +69,7 @@ export default () => (
             color: white;
             background-color: #3f51b5;
             margin-bottom: 3rem;
+            border-radius: 0 0 50% 50% / 15%;
             `}>
             <div className="contained" css={css`
                 margin: auto;

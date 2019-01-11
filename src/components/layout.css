@@ -1,8 +1,8 @@
 body {
-    font-family: sans-serif;
     color: #333;
     margin: 20px;
     overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @media (min-width: 992px) {
@@ -61,14 +61,14 @@ body {
     font-size: large !important;
     border: none;
     padding: 1rem;
-    font-size: 150%;
+    font-size: 125% !important;
     transition: color 0.3s !important;
 }
 
 .blueButton:hover {
     cursor: pointer;
     background:  #485fe0 !important;
-    color: #FFF874 !important;
+    /* color: #FFF874 !important; */
 }
 
 .primaryColor {
@@ -78,5 +78,9 @@ body {
 
 nav a {
     text-decoration: none;
-    color: inherit
+    color: inherit;
+}
+
+h1, h2, h3{
+    font-family: Helvetica, sans-serif !important;
 }
