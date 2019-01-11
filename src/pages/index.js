@@ -5,8 +5,6 @@ import Layout from '../components/layout'
 import { css } from "@emotion/core";
 import Logo from "../components/logo"
 
-import "./layout.css"
-
 const IndexPage = () => (
     <Layout>
         <div css={css`
@@ -29,7 +27,7 @@ const IndexPage = () => (
                             grid-template-columns: auto 150px; 
                         `}>
                             <p css={css`
-                                margin-bottom: 20px; @media (min-width: 992px) {min-height: 10rem};
+                                margin-bottom: 20px; @media (min-width: 992px) {min-height: 12rem};
                                 `}>The organic materials database is an <b>open access, nonprofit</b>, electronic structure database for 3-dimensional organic crystals, developed and hosted by the Nordic Institute for Theoretical Physics – Nordita. </p>
                             <a href="https://omdb.mathub.io/" target="blank" rel="noreferrer noopener"
                                 css={css`
@@ -61,7 +59,7 @@ const IndexPage = () => (
                     <h2 css={css`margin-bottom: 20px; color: #3f51b5;`}> Commercial Users </h2>
                     <div css={css`text-align: left;`}>
                         <h3>Industry Services</h3>
-                        <p css={css`margin-bottom: 20px; @media (min-width: 992px) {min-height: 10rem};`}>
+                        <p css={css`margin-bottom: 20px; @media (min-width: 992px) {min-height: 12rem};`}>
                             Our team of physics and machine learning experts can assist your business.
                         </p>
                         <div className="centered">

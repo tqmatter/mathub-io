@@ -21,7 +21,7 @@ const Image = () => (
         placeholderImage: file(relativePath: { eq: "logo-omdb.png" }) {
           childImageSharp {
             fluid(maxWidth: 250) {
-              ...GatsbyImageSharpFluid_tracedSVG
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }

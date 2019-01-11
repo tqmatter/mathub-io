@@ -12,7 +12,6 @@ const About = () => (
             <p>
                 We want to provide solutions for academics and industries in the fields of Materials Science and Machine Learning.
             </p>
-
         </div>
     </Layout>
 )
