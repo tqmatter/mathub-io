@@ -45,7 +45,7 @@ export default () => (
                     css={css`
                     text-decoration: none;
                     color: inherit;
-                    margin-right: 2rem;
+                    margin-right: 0.5rem;
                 `}>
                     <button color="inherit" className="underline">
                         <span>About</span>

@@ -31,7 +31,7 @@ const IndexPage = () => (
                         `}>
                             <p css={css`
                                 margin-bottom: 20px; @media (min-width: 992px) {min-height: 10rem};
-                                `}>The organic materials database is a <b>open access, nonprofit</b>, electronic structure database for 3-dimensional organic crystals, developed and hosted by the Nordic Institute for Theoretical Physics – Nordita. </p>
+                                `}>The organic materials database is an <b>open access, nonprofit</b>, electronic structure database for 3-dimensional organic crystals, developed and hosted by the Nordic Institute for Theoretical Physics – Nordita. </p>
                             <a href="https://omdb.mathub.io/" target="blank" rel="noreferrer noopener">
                                 <Logo />
                             </a>
