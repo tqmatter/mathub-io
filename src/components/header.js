@@ -32,6 +32,7 @@ export default () => (
                     text-decoration: none;
                     color: inherit;
                     flex-grow: 1;
+                    cursor: default;
                 `}>
                     <button color="inherit" className="underline">
                         <span css={css`

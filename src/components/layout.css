@@ -37,7 +37,7 @@ body {
     border-left: 0px;
     border-right: 0px;
     border-bottom: 5px solid transparent !important;
-    transition: border-bottom 0.3s,  color 0.3s !important;
+    transition: border-bottom 1s,  color 1s !important;
     color: white;
     font-weight: 700;
     padding-bottom: 1rem;
@@ -47,6 +47,7 @@ body {
 .underline:hover {
     border-bottom-color: #FFF874 !important;
     color: #FFF874;
+    cursor: pointer;
 }
 
 .centered {
