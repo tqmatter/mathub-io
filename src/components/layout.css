@@ -6,9 +6,6 @@ body {
 }
 
 @media (min-width: 768px) {
-    body{
-        font-size: 150%;
-    }
     .underline {
         font-size: 150%;
     }

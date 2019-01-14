@@ -8,11 +8,12 @@ import OmdbLogo from "../components/omdb-logo"
 
 const IndexPage = () => (
     <Layout>
-        <div css={css`
+        <div className="centered" css={css`
         @media (min-width: 992px) {
             display: grid;
             grid-template-columns: 5% 40% 5% 5% 40% 5%;
         }
+        max-width: 1920px;
         `}>
             <div css={css`
                 grid-column-start: 2;
@@ -32,7 +33,6 @@ const IndexPage = () => (
                                 `}>The organic materials database is an <b>open access, nonprofit</b>, electronic structure database for 3-dimensional organic crystals, developed and hosted by the Nordic Institute for Theoretical Physics – Nordita. </p>
                             <a href="https://omdb.mathub.io/" target="blank" rel="noreferrer noopener"
                                 css={css`
-                                margin-top: auto;
                                 margin-bottom: auto;
                                 margin-left: 1rem;
                             `}>

@@ -20,8 +20,8 @@ const OmdbLogo = () => (
       query {
         placeholderImage: file(relativePath: { eq: "logo-omdb.png" }) {
           childImageSharp {
-            fluid(maxWidth: 250) {
-              ...GatsbyImageSharpFluid_noBase64
+            fixed(width: 100) {
+              ...GatsbyImageSharpFixed_noBase64
             }
           }
         }
@@ -32,7 +32,7 @@ const OmdbLogo = () => (
                 height: unset !important;
                 min-width: 50px;
               }
-        `} fluid={data.placeholderImage.childImageSharp.fluid} />}
+        `} fixed={data.placeholderImage.childImageSharp.fixed} />}
   />
 )
 export default OmdbLogo
