@@ -28,6 +28,7 @@ const OmdbLogo = () => (
       }
     `}
     render={data => <Img css={css`
+            display: inline-block;
             & img {
                 height: unset !important;
                 min-width: 50px;

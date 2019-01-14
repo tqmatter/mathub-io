@@ -19,12 +19,20 @@ body {
 
 
 .contained {
-    max-width: 1100px;
+    max-width: 900px;
     margin: auto;
 }
 
+.colored {
+    background-color: #FFF874
+}
+
 .section {
-    padding: 2rem 0 2rem 0
+    padding: 0 0 2rem 0
+}
+
+.section p {
+    margin-bottom: 2rem;
 }
 
 .underline {
@@ -37,8 +45,8 @@ body {
     transition: border-bottom 1s,  color 1s !important;
     color: white;
     font-weight: 700;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .underline:hover {
@@ -61,12 +69,12 @@ body {
     padding: 1rem;
     font-size: 125% !important;
     transition: color 0.3s !important;
+    margin-top: 3rem;
 }
 
 .blueButton:hover {
     cursor: pointer;
     background:  #485fe0 !important;
-    /* color: #FFF874 !important; */
 }
 
 .primaryColor {
@@ -81,4 +89,19 @@ nav a {
 
 h1, h2, h3{
     font-family: Helvetica, sans-serif !important;
+}
+
+.slider-button {
+    margin: auto;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    font-size: 120%;
+    background-color: #ddd;
+    border-radius: 20%;
+}
+
+.ReactModal__Content{
+    max-height: 80vh;
+    overflow-y: hidden !important;
 }

@@ -34,19 +34,10 @@ export default () => (
                     flex-grow: 1;
                     cursor: default;
                 `}>
-                    <button color="inherit" className="underline">
-                        <span css={css`
-                            float: left;
-                            min-width: 4rem;
-                            margin-right: 1rem;
-                        `}>
-                            <Logo />
-                        </span>
-                        <span css={css`
-                            @media (max-width: 768px) {display: none;}
-                        `}>
-                            mathub.io
-                        </span>
+                    <button color="inherit" className="underline" css={css`
+                        font-size: 180% !important;
+                    `}>
+                        mathub.io
                     </button>
                 </Link>
 
@@ -75,11 +66,12 @@ export default () => (
             </div>
         </nav >
 
-        <div id="introduction" className="section" css={css`
+        <div id="introduction" css={css`
             color: white;
             background-color: #3f51b5;
             margin-bottom: 3rem;
             border-radius: 0 0 50% 50% / 15%;
+            padding: 2rem 0 2rem 0;
             `}>
             <div className="contained" css={css`
                 margin: auto;
