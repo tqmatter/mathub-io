@@ -99,6 +99,7 @@ h1, h2, h3{
     font-size: 120%;
     background-color: #eee;
     border-radius: 20%;
+    height: 4rem;
 }
 
 .ReactModal__Content{
