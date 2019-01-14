@@ -1,8 +1,9 @@
 body {
-    color: #333;
+    color: #444;
     margin: 20px;
     overflow-x: hidden;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: roboto, Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
 }
 
 @media (min-width: 768px) {
@@ -89,6 +90,7 @@ nav a {
 
 h1, h2, h3{
     font-family: Helvetica, sans-serif !important;
+    line-height: 1;
 }
 
 .slider-button {
@@ -100,6 +102,8 @@ h1, h2, h3{
     background-color: #eee;
     border-radius: 20%;
     height: 4rem;
+    font-family: 'Material Icons';
+    font-size: 24px;
 }
 
 .ReactModal__Content{

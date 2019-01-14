@@ -96,7 +96,7 @@ export default class Carousel extends Component {
                         grid-template-columns: 10% auto 10%;
                     `}>
                         <button className="slider-button" onClick={this.backwards}>
-                            ⮈
+                            arrow_left
                     </button>
                         <div css={css`
                         margin-top: 3rem;
@@ -111,7 +111,7 @@ export default class Carousel extends Component {
 
                         </div>
                         <button className="slider-button" onClick={this.forwards}>
-                            ⮊
+                            arrow_right
                     </button>
                         <Modal
                             isOpen={this.state.modalIsOpen}
@@ -125,7 +125,7 @@ export default class Carousel extends Component {
                                 height: 100%;
                             `}>
                                 <button className="slider-button" onClick={this.backwards}>
-                                    ⮈
+                                    arrow_left
                                 </button>
                                 <div css={css`
                                     margin: auto;
@@ -136,7 +136,7 @@ export default class Carousel extends Component {
                                     <Img fluid={image.childImageSharp.fluid} />
                                 </div>
                                 <button className="slider-button" onClick={this.forwards}>
-                                    ⮊
+                                    arrow_right
                                 </button>
                             </div>
                         </Modal>
