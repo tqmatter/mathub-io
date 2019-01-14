@@ -67,8 +67,6 @@ export default class Carousel extends Component {
         }
         const index = Math.abs(this.state.index) % Object.keys(explanations).length;
 
-        console.log(index)
-        console.log(this.state)
         return <StaticQuery
 
             query={graphql`
