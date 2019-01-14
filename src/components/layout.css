@@ -12,12 +12,6 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .underline {
-        font-size: 130%;
-    }
-}
-
 
 .contained {
     max-width: 900px;

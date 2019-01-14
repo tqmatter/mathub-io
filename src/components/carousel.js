@@ -9,7 +9,8 @@ export default class Carousel extends Component {
         super(props);
         this.state = {
             index: 0,
-            modalIsOpen: false
+            modalIsOpen: false,
+            lastTick: (new Date()).getTime()
         }
 
         this.forwards = this.forwards.bind(this);
@@ -27,20 +28,28 @@ export default class Carousel extends Component {
             if (!this.state.modalIsOpen) {
                 this.forwards()
             }
-        }, 5000);
+        }, 15000);
+    }
+
+    advance(direction) {
+        // We force 200 seconds at least since last transition to avoid bugs
+        const tick = (new Date()).getTime()
+        if (tick - this.state.lastTick > 200) {
+            this.setState({
+                index: this.state.index + direction,
+                lastTick: tick
+            })
+        }
     }
 
     forwards() {
-        this.setState({
-            index: this.state.index + 1
-        })
+        this.advance(1)
     }
 
     backwards() {
-        this.setState({
-            index: this.state.index - 1
-        })
+        this.advance(-1)
     }
+
 
     handleKeyDown(event) {
         if (event.key === "ArrowRight") {

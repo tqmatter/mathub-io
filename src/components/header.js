@@ -1,7 +1,6 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import { css } from "@emotion/core"
-import Logo from "../components/logo"
 
 
 export default () => (
@@ -35,7 +34,12 @@ export default () => (
                     cursor: default;
                 `}>
                     <button color="inherit" className="underline" css={css`
-                        font-size: 180% !important;
+                        @media (min-width:768px) {
+                            font-size: 180% !important;
+                        }
+                        @media (max-width:768px) {
+                            font-size: 130% !important;
+                        }
                     `}>
                         mathub.io
                     </button>
