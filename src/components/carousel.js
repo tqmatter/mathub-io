@@ -27,7 +27,7 @@ export default class Carousel extends Component {
             if (!this.state.modalIsOpen) {
                 this.forwards()
             }
-        }, 500000);
+        }, 5000);
     }
 
     forwards() {
@@ -51,6 +51,15 @@ export default class Carousel extends Component {
     }
 
     render() {
+        const explanations = {
+            "carousel-0": "Band structure and density of states of a material in the OMDB",
+            "carousel-1": "Clustering of materials acording to SOAP kernel in the OMDB",
+            "carousel-2": "Gap distribution of materials in the OMDB",
+        }
+        const index = Math.abs(this.state.index) % Object.keys(explanations).length;
+
+        console.log(index)
+        console.log(this.state)
         return <StaticQuery
 
             query={graphql`
@@ -71,13 +80,7 @@ export default class Carousel extends Component {
             `}
 
             render={data => {
-                const explanations = {
-                    "carousel-0": "Band structure and density of states of a material in the OMDB",
-                    "carousel-1": "Clustering of materials acording to SOAP kernel in the OMDB",
-                    "carousel-2": "Gap distribution of materials in the OMDB",
-                }
 
-                const index = this.state.index % Object.keys(explanations).length;
                 const image = data.allFile.edges[index].node;
 
                 return <div css={css`
