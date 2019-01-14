@@ -92,16 +92,11 @@ export default class Carousel extends Component {
 
                 return <div css={css`
                     width: 100%;
-                    position: relative;
-                    height: 420px;
                     margin-top: 2rem;
                     margin-bottom: 2rem;
                 `} onKeyDown={this.handleKeyDown}>
                     <div css={css`
-                        position: absolute;
                         width:100%;
-                        top: 50%;
-                        transform: translateY(-50%);
                         display: grid;
                         grid-template-columns: 10% auto 10%;
                     `}>
