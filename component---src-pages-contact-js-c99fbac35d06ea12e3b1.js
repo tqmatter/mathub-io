@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{142:function(a,e,t){"use strict";t.r(e);var c=t(8),l=(t(0),t(148));e.default=function(){return Object(c.a)(l.a,null,Object(c.a)("div",{className:"contained"},Object(c.a)("h2",null,"Contact"),Object(c.a)("p",null,"Please, feel free to contact us at the email below:"),Object(c.a)("a",{href:"mailto:diracmaterials@gmail.com"},"diracmaterials@gmail.com")))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-c99fbac35d06ea12e3b1.js.map
