@@ -8,7 +8,7 @@ const About = () => (
         <div className="contained section">
             <h1 className="centered" css={css`margin-bottom: 1rem;`}> About</h1>
 
-            <p className="centered"><i>Our mission is to accelerate the discovery of functional materials using data science techniques, taylored to the specific needs of our academic and business partners worldwide.</i></p>
+            <p className="centered"><i>Our mission is to accelerate the discovery of functional materials using data science techniques, tailored to the specific needs of our academic and business partners worldwide.</i></p>
 
             <p>Functional materials are the key to the rapid technological advancements of our time Having the right material at hand has pushed the boundaries of technology, fabrication and thinking over an incredible range of applications from air and space industry, electronics, and nano science to pharmaceuticals.</p>
 
