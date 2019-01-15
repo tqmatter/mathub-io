@@ -93,8 +93,7 @@ export default class Carousel extends Component {
 
                 return <div css={css`
                     width: 100%;
-                    margin-top: 2rem;
-                    margin-bottom: 2rem;
+                    margin-top: 1rem;
                 `} onKeyDown={this.handleKeyDown}>
                     <div css={css`
                         width:100%;
@@ -105,7 +104,6 @@ export default class Carousel extends Component {
                             arrow_left
                     </button>
                         <div css={css`
-                        margin-top: 3rem;
                         position: relative;
                         height: 100%;
                     `} onClick={this.toggleModal} >
