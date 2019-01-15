@@ -1,9 +1,10 @@
 body {
     color: #444;
     margin: 20px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-family: roboto, Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.6;
+    font-size: 18px;
 }
 
 @media (min-width: 768px) {
