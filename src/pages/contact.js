@@ -8,7 +8,7 @@ const About = () => (
             <p>
                 Please, feel free to contact us at the email below:
             </p>
-            <a href="mailto:diracmaterials@gmail.com">diracmaterials@gmail.com</a>
+            <a href="mailto: info@mathub.io"> info@mathub.io</a>
         </div>
     </Layout>
 )
