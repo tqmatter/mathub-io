@@ -14,7 +14,7 @@ const Academic = () => (
                 grid-template-columns: 120px auto; 
             `}>
                 <OmdbLogo />
-                <p>The organic materials database is a free and open access electronic structure database for 3-dimensional organic crystals. It provides tools for search queries based on data mining and machine learning techniques. The universal features provided on our web interface facilitate the identification of functional organic materials for a wide-range of applications.</p>
+                <p css={css`margin-top: 0;`}>The organic materials database is a free and open access electronic structure database for 3-dimensional organic crystals. It provides tools for search queries based on data mining and machine learning techniques. The universal features provided on our web interface facilitate the identification of functional organic materials for a wide-range of applications.</p>
                 <a href="https://omdb.mathub.io/" target="blank" rel="noreferrer noopener"
                     css={css`
                         margin-bottom: auto;
