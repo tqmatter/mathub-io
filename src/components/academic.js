@@ -23,11 +23,6 @@ const Academic = () => (
                 </a>
             </div>
             <Carousel />
-            <div className="centered">
-                <a href="https://omdb.mathub.io/" target="blank" rel="noreferrer noopener">
-                    <button className="blueButton">Visit the OMDB</button>
-                </a>
-            </div>
         </div>
     </>
 )

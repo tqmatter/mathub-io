@@ -65,7 +65,7 @@ body {
     padding: 1rem;
     font-size: 125% !important;
     transition: color 0.3s !important;
-    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .blueButton:hover {

@@ -1,6 +1,6 @@
 import React from "react"
 import { css } from "@emotion/core"
-import { Link } from "gatsby"
+
 const Business = () => (
     <>
         <h1 css={css`margin-bottom: 20px; color: #3f51b5;`}> Business Partners </h1>
@@ -20,11 +20,6 @@ const Business = () => (
                 We provide a platform for publishers to link professional literature with our academic materials databases. Our network helps to connect information and publisher products with the specific needs of researchers based on functional materials properties.
 
 
-            </div>
-            <div className="centered">
-                <Link to="contact">
-                    <button className="blueButton">Schedule a meeting with us</button>
-                </Link>
             </div>
         </div>
     </>
