@@ -10,7 +10,7 @@ const About = () => (
 
             <p className="centered"><i>Our mission is to accelerate the discovery of functional materials using data science techniques, tailored to the specific needs of our academic and business partners worldwide.</i></p>
 
-            <p>Functional materials are the key to the rapid technological advancements of our time Having the right material at hand has pushed the boundaries of technology, fabrication and thinking over an incredible range of applications from air and space industry, electronics, and nano science to pharmaceuticals.</p>
+            <p>Functional materials are the key to the rapid technological advancements of our time. Having the right material at hand has pushed the boundaries of technology, fabrication and thinking over an incredible range of applications from air and space industry, electronics, and nano science to pharmaceuticals.</p>
 
             <p>We apply and develop individual solutions based on data science and artificial intelligence to foster materials based technological advancements for our clients. Our approach challenges the complex constraints of our time, identifying materials satisfying the specific needs of the application while minimizing the impact on the environment and climate.</p>
 
