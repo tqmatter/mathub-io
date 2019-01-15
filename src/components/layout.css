@@ -84,6 +84,15 @@ nav a {
     color: inherit;
 }
 
+a {
+    text-decoration: none;
+    color: #3f51b5;
+}
+
+a:hover {
+    color: #485fe0;
+}
+
 h1, h2, h3{
     font-family: Helvetica, sans-serif !important;
     line-height: 1;
