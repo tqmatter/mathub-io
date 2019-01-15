@@ -25,21 +25,22 @@ export default class Carousel extends Component {
 
     componentDidMount() {
         setInterval(() => {
-            if (!this.state.modalIsOpen) {
-                this.forwards()
+            const tick = (new Date()).getTime();
+            if (tick - this.state.lastTick > 5000) {
+                if (!this.state.modalIsOpen) {
+                    this.forwards()
+                }
             }
         }, 15000);
     }
 
     advance(direction) {
         // We force 200 seconds at least since last transition to avoid bugs
-        const tick = (new Date()).getTime()
-        if (tick - this.state.lastTick > 200) {
-            this.setState({
-                index: this.state.index + direction,
-                lastTick: tick
-            })
-        }
+        const tick = (new Date()).getTime();
+        this.setState({
+            index: this.state.index + direction,
+            lastTick: tick
+        })
     }
 
     forwards() {
@@ -108,11 +109,12 @@ export default class Carousel extends Component {
                         position: relative;
                         height: 100%;
                     `} onClick={this.toggleModal} >
+                            {/* disable fade in, creates bugs in carrousel */}
                             <Img css={css`
                         & img {
                             min-width: 50px;
                         }
-                    `} fluid={image.childImageSharp.fluid} />
+                    `} fluid={image.childImageSharp.fluid} fadeIn={false} />
 
                         </div>
                         <button className="slider-button" onClick={this.forwards}>
@@ -138,7 +140,7 @@ export default class Carousel extends Component {
                                     max-width: 800px;
                                     max-height: 600px;
                                 `}>
-                                    <Img fluid={image.childImageSharp.fluid} />
+                                    <Img fluid={image.childImageSharp.fluid} fadeIn={false} />
                                 </div>
                                 <button className="slider-button" onClick={this.forwards}>
                                     arrow_right
