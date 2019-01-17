@@ -3,7 +3,7 @@ import { css } from "@emotion/core"
 
 const Business = () => (
     <>
-        <h1 css={css`margin-bottom: 20px; color: #3f51b5;`}> Business Partners </h1>
+        <h1 css={css`margin-bottom: 30px; color: #3f51b5;`}> Business Partners </h1>
         <div css={css`text-align: left;`}>
             <div>
 

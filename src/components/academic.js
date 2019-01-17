@@ -6,7 +6,7 @@ import Carousel from "../components/carousel"
 
 const Academic = () => (
     <>
-        <h1 css={css`margin-bottom: 20px;  color: #3f51b5; `}>Academic Users</h1>
+        <h1 css={css`margin-bottom: 30px;  color: #3f51b5; `}>Academic Users</h1>
         <div css={css`text-align: left;`}>
             <h3>The Organic Materials Database - OMDB</h3>
             <div css={css`

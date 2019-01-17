@@ -7,8 +7,9 @@ const About = () => (
             <h2>Contact</h2>
             <p>
                 Please, feel free to contact us at the email below:
+                <br />
+                <a href="mailto: info@mathub.io"> info@mathub.io</a>
             </p>
-            <a href="mailto: info@mathub.io"> info@mathub.io</a>
         </div>
     </Layout>
 )
