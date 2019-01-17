@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{142:function(a,e,t){"use strict";t.r(e);var n=t(8),c=(t(0),t(148));e.default=function(){return Object(n.a)(c.a,null,Object(n.a)("div",{className:"contained"},Object(n.a)("h2",null,"Contact"),Object(n.a)("p",null,"Please, feel free to contact us at the email below:",Object(n.a)("br",null),Object(n.a)("a",{href:"mailto: info@mathub.io"}," info@mathub.io"))))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-f68565facf0c9597955f.js.map
