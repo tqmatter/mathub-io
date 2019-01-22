@@ -75,13 +75,13 @@ export default () => (
             background-color: #3f51b5;
             margin-bottom: 3rem;
             border-radius: 0 0 50% 50% / 15%;
-            padding: 2rem 0 2rem 0;
+            padding: 2rem 0 5rem 0;
             `}>
             <div className="contained" css={css`
                 margin: auto;
                 text-align: center;
                 `}>
-                <h1>The Future of Materials Development<span css={css`color: #FFF874;`}>.</span></h1>
+                <h1 css={css`margin-bottom: 0.5rem; margin-top: 0;`}>The Future of Materials Development<span css={css`color: #FFF874;`}>.</span></h1>
 
                 Machine learning solutions for materials science.
             </div>

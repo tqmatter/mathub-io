@@ -2,12 +2,19 @@
 
 ## Install
 
-- `npm install`
+```
+npm install
+npm install --global gatsby-cli
+```
 
 ## Hot reloading
 
- - `gatsby develop`
+```
+gatsby develop
+```
 
  ## Deploy to github pages
 
- - `npm deploy`
+```
+npm deploy
+```

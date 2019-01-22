@@ -39,7 +39,7 @@ const IndexPage = () => (
                 </a>
             </div>
             <div css={css`
-                    @media (min-width: 992px) {border-right: 1px solid grey;}
+                    @media (min-width: 992px) {border-right: 1px solid #d3d3d3;}
                     @media (max-width: 992px) {border-bottom: 1px solid grey;}
                     @media (min-width: 992px) {
                         grid-row-start: 1;
